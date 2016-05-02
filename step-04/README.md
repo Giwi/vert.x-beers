@@ -46,11 +46,3 @@ to ask for the right endpoint.
 
 If you do it, you will see the [polymer-beers](https://github.com/LostInBrittany/polymer-beers) running 
 as a static resource on Vert.X.
-
-## The rest
-
-Now, using the same model, you can implement the others rest endpoints : 
-
-- get("/api/beer/:id") : the detail
-- put("/api/beer") : add a beer
-- post("/api/beer/:id") : modify a beer
