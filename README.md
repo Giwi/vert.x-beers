@@ -6,13 +6,13 @@
 The [polymer-beers](https://github.com/LostInBrittany/polymer-beers) project is a small Polymer tutorial that can be 
 used on its own. But IMHO it is a pity to do only the client-side and mocking the server API with plain files. So here 
 we have a companion project where we are going to do the server-side of 
-[polymer-beers](https://github.com/LostInBrittany/polymer-beers) using [Vert.X](https://org.giwi.vertx.io/) for creating web 
+[polymer-beers](https://github.com/LostInBrittany/polymer-beers) using [Vert.X](https://vertx.io/) for creating web 
 applications in Java 8 with minimal effort.
 
 ## What are the objectives of this tutorial
 
 Follow this tutorial to learn to build APIs in Java quickly an easily, without all the pain of the classic JEE stack. 
-You will use the [Vert.X](https://org.giwi.vertx.io/) framework, with some drops of SQL (with [h2](http://www.h2database.com/))
+You will use the [Vert.X](https://vertx.io/) framework, with some drops of SQL (with [h2](http://www.h2database.com/))
 and NoSQL databases (with [MongoDB](http://mongodb.com), work in progress).
 
 ## What do I need to use this tutorial
@@ -54,7 +54,7 @@ each one in its own directory:
 1. [Installing Vert.X](./step-02/)
 1. [Using the `Beer` service](./step-03/)
 1. [Serving static resources](./step-04/)
-1. [Using a SQL DB](./step-05/)
+1. [Using a Mongo DB](./step-05/)
 
 In each step directory you have a README file that explain the objective of the step, that you will do in the working 
 directory `app`. If you have problems or if you get lost, you also have the solution of each step in the step 
