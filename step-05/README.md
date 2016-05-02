@@ -49,3 +49,10 @@ Now, using the same model, you can implement the others rest endpoints :
 - get("/api/beer/:id") : the detail
 - put("/api/beer") : add a beer
 - post("/api/beer/:id") : modify a beer
+
+
+## Final thought
+
+When you will be a Vert.X ninja, you will use Guice to inject the mongo client. You can find some inspiration with 
+this project : [https://github.com/Giwi/vertx3-angular-beers](https://github.com/Giwi/vertx3-angular-beers) 
+

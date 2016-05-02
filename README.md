@@ -12,8 +12,8 @@ applications in Java 8 with minimal effort.
 ## What are the objectives of this tutorial
 
 Follow this tutorial to learn to build APIs in Java quickly an easily, without all the pain of the classic JEE stack. 
-You will use the [Vert.X](https://vertx.io/) framework, with some drops of SQL (with [h2](http://www.h2database.com/))
-and NoSQL databases (with [MongoDB](http://mongodb.com), work in progress).
+You will use the [Vert.X](https://vertx.io/) framework, with some drops of NoSQL databases 
+(with [MongoDB](http://mongodb.com), work in progress).
 
 ## What do I need to use this tutorial
 
