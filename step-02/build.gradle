@@ -1,0 +1,46 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+version = '0.0.1'
+
+buildscript {
+    repositories { jcenter() }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.2'
+    }
+}
+
+if (!JavaVersion.current().java8Compatible) {
+    throw new IllegalStateException('''A Haiku:
+                                      |  This needs Java 8,
+                                      |  You are using something else,
+                                      |  Refresh. Try again.'''.stripMargin())
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'http://oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+dependencies {
+    compile 'io.vertx:vertx-core:3.2.1'
+    compile 'io.vertx:vertx-web:3.2.1'
+}
+
+shadowJar {
+    classifier = 'fat'
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+    mergeServiceFiles {
+        include 'META-INF/services/io.org.giwi.vertx.core.spi.VerticleFactory'
+    }
+    doLast {
+        copy {
+            from "$buildDir/libs/"
+            into "application/"
+        }
+    }
+}
