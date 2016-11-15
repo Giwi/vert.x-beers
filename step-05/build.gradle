@@ -1,7 +1,19 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "com.github.jengelman.gradle.plugins:shadow:1.2.3"
+    }
+}
+
 apply plugin: 'idea'
 apply plugin: 'java'
-apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: "com.github.johnrengelman.shadow"
 version = '0.0.1'
+
 def generateSrcPath="$buildDir/generated-src"
 def generatedSrcDir = file("$buildDir/generated-src")
 repositories {
@@ -11,12 +23,6 @@ sourceSets {
     main {
         java.srcDirs += generatedSrcDir
         output.dir(builtBy: 'generateServiceProxy', generateSrcPath)
-    }
-}
-buildscript {
-    repositories { jcenter() }
-    dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.2'
     }
 }
 

@@ -4,17 +4,21 @@ We add Vert.X as a dependency for Gradle. To do it we need to define in the `bui
 file a *respository* (a source storing location when we will look for dependencies) and the
 dependency information for Vert.X :
 
-	apply plugin: 'idea'
-    apply plugin: 'java'
-    apply plugin: 'com.github.johnrengelman.shadow'
-    version = '0.0.1'
-
-    buildscript {
-        repositories { jcenter() }
+	buildscript {
+        repositories {
+            maven {
+                url "https://plugins.gradle.org/m2/"
+            }
+        }
         dependencies {
-            classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.2'
+            classpath "com.github.jengelman.gradle.plugins:shadow:1.2.3"
         }
     }
+
+    apply plugin: 'idea'
+    apply plugin: 'java'
+    apply plugin: "com.github.johnrengelman.shadow"
+    version = '0.0.1'
 
     if (!JavaVersion.current().java8Compatible) {
         throw new IllegalStateException('''A Haiku:
