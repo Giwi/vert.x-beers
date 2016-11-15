@@ -1,6 +1,6 @@
 apply plugin: 'idea'
 apply plugin: 'java'
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.9'
+    gradleVersion = '3.2'
     distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-all.zip"
 }

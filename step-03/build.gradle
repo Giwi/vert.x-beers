@@ -35,10 +35,10 @@ repositories {
 }
 
 dependencies {
-    compile 'io.vertx:vertx-core:3.2.1'
-    compile 'io.vertx:vertx-web:3.2.1'
-    compile "io.vertx:vertx-service-proxy:3.2.1"
-    compile "io.vertx:vertx-codegen:3.2.1"
+    compile 'io.vertx:vertx-core:3.3.3'
+    compile 'io.vertx:vertx-web:3.3.3'
+    compile "io.vertx:vertx-service-proxy:3.3.3"
+    compile "io.vertx:vertx-codegen:3.3.3"
 }
 
 shadowJar {
