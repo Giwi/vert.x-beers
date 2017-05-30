@@ -35,8 +35,8 @@ dependency information for Vert.X :
     }
 
     dependencies {
-        compile 'io.vertx:vertx-core:3.3.3'
-        compile 'io.vertx:vertx-web:3.3.3'
+        compile 'io.vertx:vertx-core:3.4.1'
+        compile 'io.vertx:vertx-web:3.4.1'
     }
 
     shadowJar {

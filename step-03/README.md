@@ -2,8 +2,8 @@
 
 ## Add the Vert.X dependencies
 
-    compile "io.vertx:vertx-service-proxy:3.3.3"
-    compile "io.vertx:vertx-codegen:3.3.3"
+    compile "io.vertx:vertx-service-proxy:3.4.1"
+    compile "io.vertx:vertx-codegen:3.4.1"
 
 ## Add the code generator
 

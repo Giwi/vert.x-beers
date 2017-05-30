@@ -8,7 +8,7 @@ First insert a bunch of data :
 
 Import Mongo :
 
-    compile 'io.vertx:vertx-mongo-client:3.3.3'
+    compile 'io.vertx:vertx-mongo-client:3.4.1'
 
 In the `BeerServiceImpl`
 
